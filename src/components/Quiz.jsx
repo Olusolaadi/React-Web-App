@@ -69,7 +69,7 @@ const initialState = {
     
         async function getQuestions() {
         try {
-            const response = await axios.get('https://quizapi.io/api/v1/questions?apiKey=3LbxpDvqfanW3VqeMQFYYotSOd2IRtM2CqejYECW&limit=5');
+            const response = await axios.get('https://quizapi.io/api/v1/questions?apiKey=3LbxpDvqfanW3VqeMQFYYotSOd2IRtM2CqejYECW&limit=20');
             dispatch({ type: 'setQuestions', payload: response.data });
             console.log(response.data)
         } catch (error) {
